@@ -34,8 +34,8 @@ body{
 
 div.box2 {
   position: absolute;
-  left: 400px;
-  top: 600px;
+  left: 800px;
+  top: 500px;
   z-index: 100; 
    animation: fade 1s ease-in , slide 3s;
 }
@@ -43,15 +43,16 @@ div.box2 {
 div.box3{
   position: static;
   background-color: indianred;
-  width: 492px;
+  width: 1160px;
   padding: 100px;
   
   
    p{
-    font-size: 1.2em;
+    font-size: 2em;
   }
   
   h2{
+     font-size: 2em;
     color: white;
   }
 animation: myAnimation 4s infinite ease-in-out alternate; 
