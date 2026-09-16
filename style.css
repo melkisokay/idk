@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Untitled</title>
+  </head>
+  <body>
+    body{
+  scroll-behavior:auto;
+  overflow:scroll;
+  background-attachment:fixed;
+  animation: bg 10s;
+}
+
+p{
+  color: rgb (200, 39, 29);
+  text-align:center;
+  text-align-last; left;
+  directions:ltr;
+  unicode-bidi:isolate-overide;
+  fontsize: 10px;
+  font-family:arial;
+  background-color:white
+}
+
+.box{
+background-color:red;
+margin: 10px, 20px, 20px, 20px,
+padding: 200px, 20px, 24px, 30px,
+
+}
+div.box{ 
+  background-image: url(https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3V0ZSUyMGJ1bm55fGVufDB8fDB8fHww)
+  width: 200px;
+  padding: 45px;
+  margin: 100px;
+  position: sticky;
+  top: 100px;
+  bottom: 0px;
+  border-style: dotted dashed solid double;
+  border-color: #F2D2FA;
+  border-width: 12px 25px;
+  border-radius: 10px 30px;
+
+  animation: bounce 2s infinite ease-in;
+  p{
+    font-family; fantasy;
+  color:white;
+  background-color:black;}
+
+  button{
+  background-color: pink;
+    color: white;
+  transition: backgrounf-color 0.3s ease;
+  }  
+button:hover{
+  background-color: blue;
+  }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); } 
+
+@keyframes bg{
+
+}
+}
+
+  </body>
+</html>
