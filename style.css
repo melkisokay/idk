@@ -6,7 +6,6 @@ p{
 }
 
 body{
-  background-color: pink;
   background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjYydThmZ2pyc3BndzUwbmljbTc1Y3lxNTlmdTQ0bWs4OXhqcWRkMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yaUG0KDAcIcWA/giphy.gif);
   background-repeat: round;
   background-attachment: scroll;
@@ -33,13 +32,12 @@ body{
 }
 }
 
-div.box2{
-  color: white;
-  background: black;
-  padding: 100px;
-  width: 150px;
-  position:relative;
-
+div.box2 {
+  position: absolute;
+  left: 400px;
+  top: 600px;
+  z-index: 100; 
+   animation: fade 1s ease-in , slide 3s;
 }
 
 div.box3{
@@ -48,6 +46,7 @@ div.box3{
   width: 492px;
   padding: 100px;
   
+  
    p{
     font-size: 1.2em;
   }
@@ -55,5 +54,23 @@ div.box3{
   h2{
     color: white;
   }
-  
+animation: myAnimation 4s infinite ease-in-out alternate; 
 }
+
+
+@keyframes myAnimation {
+  from {background-color: indianred;}
+  to {background-color: MediumVioletRed;}
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; } 
+}
+
+@keyframes slide {
+  0% { transform: translateX(-100px) translateY(0); 
+}
+  50% { transform: translateY(-50);} 
+  100% { transform: translateX(0) translateY(0);} 
+} 
